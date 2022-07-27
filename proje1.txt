@@ -2,7 +2,7 @@
 
 int main() {
     int w;
-    printf("Enter the weight of the watermelon (has to be a number that is between 1 and 100):");
+    printf("Enter the weight of the watermelon that is between 1 and 100 (1&100 included):");
     scanf("%d",&w);
     if(w%2)
         printf("NO");
