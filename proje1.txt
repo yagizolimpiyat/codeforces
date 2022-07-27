@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main() {
+    int w;
+    printf("Enter the weight of the watermelon (has to be a number that is between 1 and 100):");
+    scanf("%d",&w);
+    if(w%2)
+        printf("NO");
+    else
+        printf("YES");
+}
