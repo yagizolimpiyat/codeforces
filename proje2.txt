@@ -1,8 +1,0 @@
-#include <stdio.h>
-
-int main() {
-    int a,b;
-    printf("Enter 2 numbers between 1-16 (1 and 16 included):");
-    scanf("%d %d",&a,&b);
-    printf("The maximum dominoes that fit in the board is:%d",a*b/2);
-}
