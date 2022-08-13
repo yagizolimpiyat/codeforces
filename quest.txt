@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+    int l=0,k=0,m;
+    for(;;){
+        scanf("%d",&m);
+        if(m==-1)
+            break;
+        else
+            k+=m;
+        l++;
+    }
+    printf("%d",k/l);
+}
