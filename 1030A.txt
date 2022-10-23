@@ -1,0 +1,25 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main() 
+{
+    int n,x;
+    bool a=false;
+    cin>>n;
+    for(int i=0;i<n;i++)
+    {
+        cin>>x;
+        if(x==1)
+        {
+            a=true;
+            break;   
+        }
+    }
+    
+    if(a==1)
+        cout<<"HARD";
+    else
+        cout<<"EASY";
+    
+    return 0;
+}
