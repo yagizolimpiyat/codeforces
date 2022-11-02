@@ -1,0 +1,33 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int i,j,sum=0;
+    int arr[5][5];
+    
+    for(int a=0;a<5;a++)
+    {    
+        for(int b=0;b<5;b++)
+        {
+            cin>>arr[a][b];
+            if(arr[a][b]==1)
+            {
+                i=a+1;
+                j=b+1;
+            }
+        }    
+    }
+    
+    if(i-3>0)
+        sum+=i-3;
+    else if(i-3<0)
+        sum-=i-3;
+    if(j-3>0)
+        sum+=j-3;
+    else if(j-3<0)
+        sum-=j-3;
+        
+    cout<<sum;
+    
+    return 0;
+}
