@@ -1,0 +1,25 @@
+#include<bits/stdc++.h>
+using namespace std;
+ 
+int main() {
+    int limak,bob,yrs=0;;
+    cin>>limak>>bob;
+    
+    while(1)
+    {
+        if(limak*3>bob*3)
+        {
+            cout<<yrs;
+            break;
+        }
+        else
+        {
+            limak*=3;
+            bob*=2;
+        }
+        
+            yrs++;
+    }
+ 
+    return 0;
+}
