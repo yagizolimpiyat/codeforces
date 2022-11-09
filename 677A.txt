@@ -1,0 +1,22 @@
+#include<bits/stdc++.h>
+using namespace std;
+ 
+int main() {
+    int n, f, width=0;
+    cin >> n >> f;
+    
+    int arr[n];
+    
+    for(int i=0;i<n;i++)
+    {
+        cin >> arr[i];
+        if(arr[i]>f)
+            width+=2;
+        else
+            width++;
+    }
+    
+    cout<<width;
+    
+    return 0;
+}
