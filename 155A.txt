@@ -1,0 +1,34 @@
+#include<bits/stdc++.h>
+using namespace std;
+ 
+int main() {
+    int n,p,max,min,ctr=0;
+    
+    cin >> n;
+    
+    for(int i=0;i<n;i++)
+    {
+        cin >> p;
+        
+        if(i==0)
+        {
+            max=p;
+            min=p;
+        }
+        
+        if(p>max)
+        {
+            max=p;
+            ctr++;
+        }    
+        else if(p<min)
+        {
+            min=p;
+            ctr++;
+        }
+    }
+    
+    cout << ctr;
+    
+    return 0;
+}
