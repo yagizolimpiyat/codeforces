@@ -1,0 +1,25 @@
+
+#include<bits/stdc++.h>
+using namespace std;
+ 
+int main() {
+    int n,k,tlfp,tuip=0;
+    
+    cin >> n >> k;
+    
+    tlfp=240-k;
+    
+    for(int i=1;i<=n;i++)
+    {
+        tuip+=i*5;
+        if(tuip>tlfp)
+        {
+            cout << i-1;
+            return 0;
+        }
+    }
+    
+    cout << n;
+    
+    return 0;
+}
