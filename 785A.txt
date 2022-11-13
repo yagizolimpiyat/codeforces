@@ -1,0 +1,31 @@
+
+#include<bits/stdc++.h>
+using namespace std;
+ 
+int main() {
+    int n,totalFaces=0;
+    string str;
+    char T='T',C='C',O='O',D='D',I='I';
+    
+    cin >> n;
+    
+    for(int i=0;i<n;i++)
+    {
+        cin >> str;
+        
+        if(str[0]==T)
+            totalFaces+=4;
+        else if(str[0]==C)
+            totalFaces+=6;
+        else if(str[0]==O)
+            totalFaces+=8;
+        else if(str[0]==D)
+            totalFaces+=12;
+        else if(str[0]==I)
+            totalFaces+=20;
+    }
+    
+    cout << totalFaces;
+    
+    return 0;
+}
