@@ -1,0 +1,40 @@
+#includebitsstdc++.h
+using namespace std;
+ 
+int main() {
+    int n,letter=65;
+    string str;
+    bool rw=true;
+    
+    cin  n;
+    
+    cin  str;
+    
+    if(n26)
+    {
+        cout  NO;
+        return 0;
+    }
+    for(int i=0;i26;i++)
+    {
+        for(int j=0;jn;j++)
+        {
+            if(str[j]==letterstr[j]==letter+32)
+                break;
+            if(j==n-1&&(str[j]!=letterstr[j]!=letter+32))
+                rw=false;
+        }
+        
+        letter++;
+        
+        if(rw==false)
+        {
+            cout  NO;
+            return 0;
+        }
+    }
+    
+    cout  YES;
+    
+    return 0;
+}
