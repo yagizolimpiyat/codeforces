@@ -1,0 +1,39 @@
+#include<bits/stdc++.h>
+using namespace std;
+ 
+int main() {
+    int t,n;
+    
+    bool wr=false;
+    
+    cin >> t;
+    
+    for(int i=0;i<t;i++)
+    {
+        wr=false;
+        
+        cin >> n;
+        
+        int arr[n];
+        
+        for(int j=0;j<n;j++)
+            cin >> arr[j];
+        
+        sort(arr, arr+n);
+        
+        for(int j=0;j<n-1;j++)
+        {
+            if(arr[j]-arr[j+1]>1||arr[j]-arr[j+1]<-1)
+            {
+                cout << "NO\n";
+                wr=true;
+                break;
+            }
+        }
+        
+        if(wr==false)
+            cout << "YES\n";
+    }
+    
+    return 0;
+}
